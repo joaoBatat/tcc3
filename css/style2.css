@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0px;
+    font-family: arial;
+    background-color: rgb(19, 19, 19);
+    overflow-x: hidden;
+}
+
+.search-box{
+    position: absolute;
+    top: 3.75%;
+    left: 78.5%;
+    transform: translate(-50%,-50%);
+    background: none;
+    height: 40px;
+    padding: 1px;
+    width: 15%;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-btn{
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt{
+    border: white;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.container{
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.2) 20%,
+        rgba(20, 20, 20, 0.2) 80%,
+        rgba(20, 20, 20, 1) 100%
+    ),
+    url(../banner.jpg);
+    background-size: cover;
+    padding: 0.26rem 0.75rem 0 0.75rem;
+}
+
+.hero{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 11rem;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left a{
+    color: #eee;
+    margin: 0 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-left a:hover{
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.menu-left,
+.menu-right{
+    display: flex;
+    color: white;
+    font-size: .87rem;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li{
+    padding-right: .9rem;
+    cursor: pointer;
+}
+
+.menu .user img{
+    width: 2rem;
+    margin-right: .5rem;
+    border-radius: 1px;
+}
+
+.menu .user{
+    display: flex;
+    align-items: center;
+}
+
+.menu i{
+    font-size: 20px;
+}
+
+.menu-right ul li{
+    padding-right: 1.5rem;
+}
+
+.banner{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.banner .subtittle{
+    padding-left: 20px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.25;
+    padding-top: .5rem;
+    font-weight: normal;
+}
+
+.buttons{
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.buttons .btn{
+    color: rgb(0, 0, 0);
+    padding: 0.6rem 2rem;
+    margin-right: .75rem;
+    font-weight: 600;
+    border-radius: 0.125rem;
+    background-color: #fff;
+    color: #000;
+    font-family: inherit;
+    font-size: 100%;
+    border: 0;
+    border-radius: 5px 5px;
+    cursor: pointer;
+}
+
+.buttons .btn{
+    margin-right: 0.5rem;
+}
+
+.category{
+    height: 300px;
+}
+
+.category span{
+    color: #e5e5e5;
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.slider{
+    margin-top: .8rem;
+    display: flex;
+    position: absolute;
+    left: 3.75rem;
+    right: 0;
+    gap: 1px;
+    height: 300px;
+}
+
+.slider .movie{
+    min-width: 19.3%;
+}
+
+.slider .movie img{
+    max-width: 100%;
+    padding-right: 5px;
+}
+
+.footer{
+    margin:100px;
+    width: 80%;
+    color: #808080;
+}
+
+.footer .social{
+    padding-right: 26px;
+    font-size: 26px;
+}
+
+.flex{
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.footer .info{
+    width: 25%;
+}
+
+.footer .info ul{
+    list-style: none;
+    display: inline;
+    font-size: 12px;
+}
+
+.footer .info ul li{
+    margin-top: 8px;
+}
+
+div.movie{
+    transition: 0.5s;
+    z-index: 0;
+    padding-right: -10px;
+}
+
+div.movie:hover {
+    box-shadow: 0 0 0 -10px rgba(0, 0, 0, 0.05);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
